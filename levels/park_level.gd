@@ -4,7 +4,7 @@ extends Node2D
 @onready var tools = get_node("Tools")
 @onready var hotdogs = get_node("HotdogStand")
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	if Input.is_action_just_pressed("interact"):
 		interact()
 	if PlayerVars.completed.size() == 2 and not $CutscenePlayer.is_playing():
@@ -35,5 +35,5 @@ func interact():
 		DialogueManager.show_example_dialogue_balloon(dialogue)
 
 
-func game_end(anim_name):
+func game_end(_anim_name):
 	get_tree().quit()

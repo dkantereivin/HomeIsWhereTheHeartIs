@@ -22,6 +22,8 @@ Jesse: But ever since then I've been between places, I stayed with my relatives 
 Jesse: We learned about the talking cure in my Pyschology class, and I know my problems aren't just going to dissapear anytime soon.[next=auto]
 Jesse: But it's great to say shit out loud, y'know?[next=auto]
 - "Happy to listen, well not happy but... you know."
+	do completed += ["Jesse"]
 	=> END
 - "Happy to listen. I got somewhere to be though, sorry."
+	do completed += ["Jesse"]
 	=> END

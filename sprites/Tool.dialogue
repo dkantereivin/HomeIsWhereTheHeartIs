@@ -1,4 +1,8 @@
 ~ Tool
 
-You have found the tools Derek was talking about.
-These tools have been added to your inventory.
+if "Derek" in quests
+	You have found the tools Derek was talking about.[next=auto]
+	These tools have been added to your inventory.
+else
+	You don't have a use for these yet.[next=auto]
+	Nonetheless, these tools have been added to your inventory.

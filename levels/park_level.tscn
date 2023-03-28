@@ -3874,7 +3874,7 @@ script = ExtResource("1_tl7y2")
 
 [node name="Player" parent="." instance=ExtResource("1_tviea")]
 position = Vector2(868, 1045)
-move_speed = 200.0
+move_speed = 150.0
 
 [node name="PlayerCamera" type="Camera2D" parent="Player"]
 zoom = Vector2(2.5, 2.5)
@@ -4011,6 +4011,7 @@ position = Vector2(1560, 550)
 rotates = false
 
 [node name="AnimatedSprite2D" parent="CopPath1/Cop1PathFollow" instance=ExtResource("22_2bmpw")]
+z_index = 1
 position = Vector2(5, -4)
 
 [node name="CopPath2" type="Path2D" parent="."]
@@ -4022,6 +4023,7 @@ position = Vector2(1560, 550)
 rotates = false
 
 [node name="AnimatedSprite2D" parent="CopPath2/Cop2PathFollow" instance=ExtResource("22_2bmpw")]
+z_index = -1
 position = Vector2(6, -3)
 
 [node name="CopPath3" type="Path2D" parent="."]
@@ -4033,6 +4035,7 @@ position = Vector2(1560, 550)
 rotates = false
 
 [node name="AnimatedSprite2D" parent="CopPath3/Cop3PathFollow" instance=ExtResource("22_2bmpw")]
+z_index = -1
 position = Vector2(6, -3)
 
 [node name="CutscenePlayer" type="AnimationPlayer" parent="."]

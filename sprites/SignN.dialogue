@@ -6,7 +6,7 @@ The sign reads: "No encampments or overnight tents permitted."
 if "Tools" in inventory
 	do remove_sign("SignN")
 	if not sign_exists("SignE")
-		Police Officer: Hey! You can't be taking those down. Do this again and I'll have to arrest you!
+		Police Officer: I told you to stop! You deserve what's coming, bum!
 else
 	"This sign looks like its firmly in place. I will need some tools to take it down."
 	=> END
