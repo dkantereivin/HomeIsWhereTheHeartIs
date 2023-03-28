@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://cbt4j41dkm5ft"]
+[gd_scene load_steps=30 format=3 uid="uid://cbt4j41dkm5ft"]
 
 [ext_resource type="Script" path="res://levels/park_level.gd" id="1_tl7y2"]
 [ext_resource type="PackedScene" uid="uid://be2axyohnka6e" path="res://characters/player.tscn" id="1_tviea"]
@@ -18,7 +18,6 @@
 [ext_resource type="Texture2D" uid="uid://dvgsqvvhxp0fh" path="res://sprites/houseless/frames/listening.png" id="15_feie1"]
 [ext_resource type="Texture2D" uid="uid://ccht2fve7r5sp" path="res://sprites/houseless/frames/pointing.png" id="16_eqhfp"]
 [ext_resource type="Texture2D" uid="uid://dquehsq3jo367" path="res://sprites/houseless/frames/talking.png" id="17_3pepy"]
-[ext_resource type="Script" path="res://sprites/houseless/houseless.gd" id="19_ddfan"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xo63c"]
 texture = ExtResource("2_dmyuv")
@@ -3744,8 +3743,6 @@ texture = ExtResource("13_eska7")
 position = Vector2(396, 197)
 scale = Vector2(0.0662879, 0.0662879)
 sprite_frames = SubResource("SpriteFrames_fdu5n")
-script = ExtResource("19_ddfan")
-dialogue_file = "res://sprites/houseless/dialogues/Jesse.json"
 
 [node name="Derek" type="AnimatedSprite2D" parent="HouselessGroup"]
 position = Vector2(193, 110)

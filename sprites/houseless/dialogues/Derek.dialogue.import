@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_8"
+type="Resource"
+uid="uid://b2q8t86tdygiu"
+path="res://.godot/imported/Derek.dialogue-e89a8a9e75c8b9d55b75fc801b524be5.tres"
+
+[deps]
+
+source_file="res://sprites/houseless/dialogues/Derek.dialogue"
+dest_files=["res://.godot/imported/Derek.dialogue-e89a8a9e75c8b9d55b75fc801b524be5.tres"]
+
+[params]
+

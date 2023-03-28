@@ -1,0 +1,11 @@
+~ Jesse
+
+Jesse: I'm starving...
+- "I don't really have any food on me."
+- "<< Pretend you don't hear or see anything. >>" => END
+Jesse: There's a food stand over there, could you get me something?
+- "I don't have a lot of cash, but I can see if they have a hot dog or something..."
+- "Sorry, no thank you." => END
+Jesse: Really? I haven't had anything to eat in two days, and I'm starting to see spots in my vision, I got kicked out a couple days ago and I don't know how to get anything for free... I already tried to steal from the guy selling food over there and now he knows what I look like... It means a lot...
+set quests += ["JesseFood"]
+=> END
