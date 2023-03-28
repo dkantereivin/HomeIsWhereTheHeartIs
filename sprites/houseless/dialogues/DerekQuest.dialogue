@@ -1,0 +1,30 @@
+~ DerekQuest
+
+if sign_exists("SignN") and sign_exists("SignE")
+	Derek: Are you gonna help me cut down the signs? Like I said, tools are near the park garden.[next=auto]
+	Derek: The cops don't do anything to park visitors, but I'm worried they'll arrest me if I try.
+	=> END
+elif sign_exists("SignN")
+	Derek: Thanks for taking down one of the signs! I can see you found the tools. Could you take down the one near the north park entrance?
+	=> END
+elif sign_exists("SignE")
+	Derek: Thanks for taking down one of the signs! I can see you found the tools. Could you take down the one near the road?
+	=> END
+Derek: You're a real one man. I appreciate it, these guys always use the signs as an excuse to kick us out.
+Derek: I hope the cops didn't give you any trouble.
+- I got a warning from one of them.
+	Derek: Aw crap. If that was one of us though, we'd definetly get arrested.
+- Nah, don't worry about it.
+Derek: Yeah thanks again man. 
+Derek: You know its funny, four years ago and I was playing tennis in this very park. 
+Derek: Then COVID-19 hit, the government checks weren’t enough to sustain my business and it went under.
+- COVID was hard for a lot of people.
+Derek: Yeah, I’m definitely not special just unlucky…
+- What kind of business did you have?
+Derek: I had a bagel business, I used to give discounts to students just like you all the time you know? We’ve all got to eat haha.
+Derek: When I started my business I thought that the world was a place where you pull yourself up by your bootstraps.
+Derek: But as I get older, and I find myself sleeping in this park I realize that our life can change in an instant, and people can’t always control the situations they find themselves in. 
+- I mean you can.
+	Derek: I guess we'll agree to disagree. I hope you never get to find out for yourself.
+- Yeah sometimes things are out of our control.
+	Derek: Yeah, they are...

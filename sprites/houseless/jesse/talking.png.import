@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dvgsqvvhxp0fh"
-path="res://.godot/imported/listening.png-006e615039cd26c073835ec1642d047a.ctex"
+uid="uid://bied1n0llcjjf"
+path="res://.godot/imported/talking.png-b08be05b6fd5745bc8ce1dbe4ac198a5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/houseless/frames/listening.png"
-dest_files=["res://.godot/imported/listening.png-006e615039cd26c073835ec1642d047a.ctex"]
+source_file="res://sprites/houseless/jesse/talking.png"
+dest_files=["res://.godot/imported/talking.png-b08be05b6fd5745bc8ce1dbe4ac198a5.ctex"]
 
 [params]
 

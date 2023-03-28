@@ -1,0 +1,22 @@
+~ HotdogStand
+
+Vendor: Howdy! Welcome to Willy Dog. What can I get ya?
+- << Buy Yourself a Hot Dog >>
+	The hotdog tastes long and hard. Delicious.
+	=> END
+- << Buy Yourself a Hamburger >>
+	The hambuger tastes meaty. Yum.
+	=> END
+- << Buy Yourself a Veggie Burger >>
+	Damn, beyond meat is really getting good these days. I can almost hear it mooing.
+	=> END
+- << Buy Jesse a Hot Dog >> [if "Jesse" in quests]
+	do inventory += ["Food"]
+	Vendor: You're a first time customer. It's on the house. Well, more like the van, hahaha.
+	- << Take Hotdog >>
+- << Buy Jesse a Hot Dog with Fries >> [if "Jesse" in quests]
+	do inventory += ["Food"]
+	Vendor: You're a first time customer. Fries are on the house. Well, more like the van, hahaha.[next=auto]
+	Vendor: That'll be $5.
+	- << Pay Take Hotdog and Fries >>
+	=> END

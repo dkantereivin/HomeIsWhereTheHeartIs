@@ -1,0 +1,27 @@
+~ JesseQuest
+
+Jesse: Hi Again! Any chance you got me something to eat?
+- "Sorry, no. I'll be right back!"
+	Jesse: The concession stand is over by the pond.
+	=> END
+- << Walk Away >>
+	=> END
+- "Here, I got you a hotdog." [if "Food" in inventory]
+Jesse: Wow, you're insane man, I haven't had a proper meal in a couple days. The hunger really gets to you, you know?[next=auto]
+Jesse: My parents and I used to go get these everytime we were in the park but now we're not on the best of terms...[next=auto]
+Jesse: I don't think those days are coming back, but maybe that's for the best right? Who's to say...
+- Glad I could help. I got some where to be, see you around. => END
+- "I'm sorry things aren't working out with your folks."
+Jesse: Yeah no it's cool. My family is super is religious, like Orthodox level you know what I mean?[next=auto]
+Jesse: I didn't even try to come out to them, my mother was going through my phone while I was at volleyball practice, and she saw some of my personal texts.[next=auto]
+Jesse: Yeah it's pretty fucked, and my whole life changed in an instant.[next=auto]
+Jesse: Like I'm still not even sure about my sexuality, I'm just a teenager still trying to figure shit out.[next=auto]
+Jesse: But ever since then I've been between places, I stayed with my relatives for a couple days but that didn't last very long, and I don't really have anywhere else to go.
+- "Jesus Christ thats fucked up man..."
+- "That sounds so rough."
+Jesse: We learned about the talking cure in my Pyschology class, and I know my problems aren't just going to dissapear anytime soon.[next=auto]
+Jesse: But it's great to say shit out loud, y'know?[next=auto]
+- "Happy to listen, well not happy but... you know."
+	=> END
+- "Happy to listen. I got somewhere to be though, sorry."
+	=> END

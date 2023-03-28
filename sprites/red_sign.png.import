@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dquehsq3jo367"
-path="res://.godot/imported/talking.png-addc16de6a296cf5a3ec9f0e1f5a1913.ctex"
+uid="uid://cwuvhmwlmjb88"
+path="res://.godot/imported/red_sign.png-8e8da6ace7103bc31ef4efb1caf35117.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/houseless/frames/talking.png"
-dest_files=["res://.godot/imported/talking.png-addc16de6a296cf5a3ec9f0e1f5a1913.ctex"]
+source_file="res://sprites/red_sign.png"
+dest_files=["res://.godot/imported/red_sign.png-8e8da6ace7103bc31ef4efb1caf35117.ctex"]
 
 [params]
 

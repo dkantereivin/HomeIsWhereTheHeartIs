@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_8"
+type="Resource"
+uid="uid://dj3dtmo4h7vgj"
+path="res://.godot/imported/DerekQuest.dialogue-a46c9cde3c163637c953b20e88271626.tres"
+
+[deps]
+
+source_file="res://sprites/houseless/dialogues/DerekQuest.dialogue"
+dest_files=["res://.godot/imported/DerekQuest.dialogue-a46c9cde3c163637c953b20e88271626.tres"]
+
+[params]
+

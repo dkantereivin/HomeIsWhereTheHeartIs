@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_8"
+type="Resource"
+uid="uid://chudtyxm31pip"
+path="res://.godot/imported/SignE.dialogue-1700ec0ff253515ed51371992866d214.tres"
+
+[deps]
+
+source_file="res://sprites/SignE.dialogue"
+dest_files=["res://.godot/imported/SignE.dialogue-1700ec0ff253515ed51371992866d214.tres"]
+
+[params]
+

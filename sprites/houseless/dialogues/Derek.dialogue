@@ -9,7 +9,8 @@ Derek: Ah, that's cool, I should probably quit anyways. But a quick little smoke
 Derek: The police started putting all these signs up around the park, I'm not sure if they're trying to intimidate us or if they're getting serious.[next=auto]
 Derek: They've increased their patrols and I feel like they're going to do something any day now. It's stressing me out man.
 - "That sounds really awful. Is there any way I can help?"
-- "I'm sure it's nothing." => END
+- "I'm sure it's nothing. << Leave >>" => END
 Derek: The police over there don't really fuck with us, but wanna help us take down the signs? There'll be some tools in the community garden. Where there's no law, there's no wrong, eh?
-set quests += ["DerekSigns"]
+set quests += ["Derek"]
 => END
+

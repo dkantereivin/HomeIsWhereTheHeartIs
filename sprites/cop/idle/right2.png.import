@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ccht2fve7r5sp"
-path="res://.godot/imported/pointing.png-e427ec25a29c502285116188709a578c.ctex"
+uid="uid://dexd73cfh8eij"
+path="res://.godot/imported/right2.png-012717dfa39f03b156fd695423fe542a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/houseless/frames/pointing.png"
-dest_files=["res://.godot/imported/pointing.png-e427ec25a29c502285116188709a578c.ctex"]
+source_file="res://sprites/cop/idle/right2.png"
+dest_files=["res://.godot/imported/right2.png-012717dfa39f03b156fd695423fe542a.ctex"]
 
 [params]
 

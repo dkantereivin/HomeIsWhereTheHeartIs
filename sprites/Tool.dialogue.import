@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_8"
+type="Resource"
+uid="uid://dy6bhcy5othk6"
+path="res://.godot/imported/Tool.dialogue-c92b759b048f59f6c96eef40bab7ff6f.tres"
+
+[deps]
+
+source_file="res://sprites/Tool.dialogue"
+dest_files=["res://.godot/imported/Tool.dialogue-c92b759b048f59f6c96eef40bab7ff6f.tres"]
+
+[params]
+

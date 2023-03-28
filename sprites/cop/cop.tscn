@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://ccdr6ognco6x8"]
+
+[ext_resource type="Texture2D" uid="uid://bgo4iyww60rv2" path="res://sprites/cop/idle/left.png" id="1_eqxtw"]
+[ext_resource type="Texture2D" uid="uid://qu4gr0tg5y7o" path="res://sprites/cop/idle/right.png" id="2_mui2j"]
+[ext_resource type="Texture2D" uid="uid://dexd73cfh8eij" path="res://sprites/cop/idle/right2.png" id="3_c858l"]
+[ext_resource type="Texture2D" uid="uid://crks7wwb85d2q" path="res://sprites/cop/idle/notes.png" id="4_ex2cc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sq12n"]
+animations = [{
+"frames": [{
+"duration": 20.0,
+"texture": ExtResource("1_eqxtw")
+}, {
+"duration": 2.0,
+"texture": ExtResource("2_mui2j")
+}, {
+"duration": 10.0,
+"texture": ExtResource("3_c858l")
+}, {
+"duration": 15.0,
+"texture": ExtResource("4_ex2cc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+position = Vector2(-3.8147e-06, 7.62939e-06)
+scale = Vector2(0.337838, 0.337838)
+sprite_frames = SubResource("SpriteFrames_sq12n")
+frame_progress = 0.947354
+
+[node name="PoliceOfficer" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="PoliceOfficer"]
+polygon = PackedVector2Array(-16, 45, -2, 45, 2, 37, 8, 45, 19, 45, 22, 39, 31, 33, 36, 29, 36, 15, 31, 2, 22, -5, 25, -8, 30, -14, 29, -34, 15, -44, 7, -48, -4, -48, -11, -41, -24, -36, -24, -28, -24, -14, -24, -5, -34, 7, -37, 22, -37, 34, -24, 34)

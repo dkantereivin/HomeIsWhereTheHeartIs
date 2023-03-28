@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_8"
+type="Resource"
+uid="uid://bksdbush7cwhs"
+path="res://.godot/imported/HotdogStand.dialogue-60e3f138189d5394ec28bd1609f8c9bc.tres"
+
+[deps]
+
+source_file="res://sprites/HotdogStand.dialogue"
+dest_files=["res://.godot/imported/HotdogStand.dialogue-60e3f138189d5394ec28bd1609f8c9bc.tres"]
+
+[params]
+

@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://cbt4j41dkm5ft"]
+[gd_scene load_steps=47 format=3 uid="uid://bvwkqm85hclp4"]
 
 [ext_resource type="Script" path="res://levels/park_level.gd" id="1_tl7y2"]
 [ext_resource type="PackedScene" uid="uid://be2axyohnka6e" path="res://characters/player.tscn" id="1_tviea"]
@@ -14,10 +14,18 @@
 [ext_resource type="PackedScene" uid="uid://e2kqb58kpaad" path="res://sprites/tent/tent.tscn" id="11_jw73m"]
 [ext_resource type="Texture2D" uid="uid://pvsroyyw3lcg" path="res://sprites/tent/red.png" id="12_7t8wc"]
 [ext_resource type="Texture2D" uid="uid://dsi1rup4728vm" path="res://sprites/tent/beige.png" id="13_eska7"]
-[ext_resource type="Texture2D" uid="uid://0iv7x5crq6gr" path="res://sprites/houseless/frames/idle.png" id="14_7opw5"]
-[ext_resource type="Texture2D" uid="uid://dvgsqvvhxp0fh" path="res://sprites/houseless/frames/listening.png" id="15_feie1"]
-[ext_resource type="Texture2D" uid="uid://ccht2fve7r5sp" path="res://sprites/houseless/frames/pointing.png" id="16_eqhfp"]
-[ext_resource type="Texture2D" uid="uid://dquehsq3jo367" path="res://sprites/houseless/frames/talking.png" id="17_3pepy"]
+[ext_resource type="Texture2D" uid="uid://0iv7x5crq6gr" path="res://sprites/houseless/derek/idle.png" id="14_7opw5"]
+[ext_resource type="Texture2D" uid="uid://br4pc7hwajuw1" path="res://sprites/houseless/jesse/idle.png" id="15_151d6"]
+[ext_resource type="Texture2D" uid="uid://dvgsqvvhxp0fh" path="res://sprites/houseless/derek/listening.png" id="15_feie1"]
+[ext_resource type="Texture2D" uid="uid://b5qpy1gygxnnc" path="res://sprites/houseless/jesse/listening.png" id="16_5dupg"]
+[ext_resource type="Texture2D" uid="uid://ccht2fve7r5sp" path="res://sprites/houseless/derek/pointing.png" id="16_eqhfp"]
+[ext_resource type="Texture2D" uid="uid://dquehsq3jo367" path="res://sprites/houseless/derek/talking.png" id="17_3pepy"]
+[ext_resource type="Texture2D" uid="uid://cv7usum7f0q3u" path="res://sprites/houseless/jesse/pointing.png" id="17_12hjo"]
+[ext_resource type="Texture2D" uid="uid://bied1n0llcjjf" path="res://sprites/houseless/jesse/talking.png" id="18_yis5j"]
+[ext_resource type="Texture2D" uid="uid://cwuvhmwlmjb88" path="res://sprites/red_sign.png" id="19_o5qqi"]
+[ext_resource type="Texture2D" uid="uid://de70ei04goyla" path="res://sprites/tools.png" id="20_ej0su"]
+[ext_resource type="Texture2D" uid="uid://iq3raumpacyg" path="res://sprites/hotdog_stand.png" id="21_nqlfy"]
+[ext_resource type="PackedScene" uid="uid://ccdr6ognco6x8" path="res://sprites/cop/cop.tscn" id="22_2bmpw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xo63c"]
 texture = ExtResource("2_dmyuv")
@@ -3645,9 +3653,47 @@ sources/8 = SubResource("TileSetAtlasSource_piqyq")
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("14_7opw5")
+"texture": ExtResource("15_151d6")
 }],
 "loop": false,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_5dupg")
+}],
+"loop": true,
+"name": &"listening",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_12hjo")
+}],
+"loop": true,
+"name": &"pointing",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_yis5j")
+}],
+"loop": true,
+"name": &"talking",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uber2"]
+size = Vector2(346.971, 467.657)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1mx1x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_7opw5")
+}],
+"loop": true,
 "name": &"default",
 "speed": 5.0
 }, {
@@ -3676,12 +3722,166 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7rq3w"]
+size = Vector2(289.787, 450.782)
+
+[sub_resource type="Curve2D" id="Curve2D_c3hni"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 1560, 550, 0, 0, 0, 0, 1537.6, 552.527, 0, 0, 0, 0, 1310.37, 548.815, 0, 0, 0, 0, 1114, 552, 51.9137, 7.41624, -51.9137, -7.41624, 871, 543, 0, 0, 0, 0, 587, 351, 0, 0, 0, 0, 449, 297)
+}
+point_count = 7
+
+[sub_resource type="Curve2D" id="Curve2D_pdiq6"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 1560, 550, 0, 0, 0, 0, 1537.6, 552.527, 14.6085, 12.361, -14.6085, -12.361, 1518, 510, 11.9865, -18.7288, -11.9865, 18.7288, 1444, 515, 0, 0, 0, 0, 1310.37, 548.815, 0, 0, 0, 0, 1114, 552, 51.9137, 7.41624, -51.9137, -7.41624, 871, 543, 0, 0, 0, 0, 587, 351, 0, 0, 0, 0, 449, 297)
+}
+point_count = 9
+
+[sub_resource type="Curve2D" id="Curve2D_crutd"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 1560, 550, 0, 0, 0, 0, 1535, 556, 0, 0, 0, 0, 1310.37, 548.815, 0, 0, 0, 0, 1114, 552, 51.9137, 7.41624, -51.9137, -7.41624, 871, 543, 0, 0, 0, 0, 587, 351, 0, 0, 0, 0, 449, 297)
+}
+point_count = 7
+
+[sub_resource type="Curve2D" id="Curve2D_snm2t"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 1560, 550, 0, 0, 0, 0, 1537.6, 552.527, 0, 0, 0, 0, 1468, 556, 0, 0, 0, 0, 1310.37, 548.815, 0, 0, 0, 0, 1114, 552, 51.9137, 7.41624, -51.9137, -7.41624, 871, 543, 0, 0, 0, 0, 587, 351, 0, 0, 0, 0, 449, 297)
+}
+point_count = 8
+
+[sub_resource type="Animation" id="Animation_8nnx7"]
+length = 12.0
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate:r")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1, 2, 10, 12)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate:g")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1, 2, 10, 12)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:modulate:b")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1, 2, 10, 12)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:modulate:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1, 2, 10, 12)
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Player/PlayerCamera:enabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1, 12),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, false, true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CutsceneCamera/CameraPathFollow/Camera2D:enabled")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 1, 12),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("CutsceneCamera/CameraPathFollow:progress_ratio")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0.8, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(1, 2, 10, 12)
+}
+tracks/7/type = "bezier"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("CopPath1/Cop1PathFollow:progress_ratio")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0.8, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(1, 2, 10, 12)
+}
+tracks/8/type = "bezier"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("CopPath2/Cop2PathFollow:progress_ratio")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0.7, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(1, 2, 10, 12)
+}
+tracks/9/type = "bezier"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("CopPath3/Cop3PathFollow:progress_ratio")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0.7, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(1, 2, 10, 12)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0mcu1"]
+_data = {
+"RESET": SubResource("Animation_8nnx7")
+}
+
 [node name="ParkLevel" type="Node2D"]
 script = ExtResource("1_tl7y2")
 
 [node name="Player" parent="." instance=ExtResource("1_tviea")]
 position = Vector2(868, 1045)
-move_speed = 150.0
+move_speed = 200.0
+
+[node name="PlayerCamera" type="Camera2D" parent="Player"]
+zoom = Vector2(2.5, 2.5)
+limit_left = 5
+limit_top = 0
+limit_right = 1880
+limit_bottom = 1073
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2(0.981064, 1.00024)
@@ -3738,13 +3938,106 @@ position = Vector2(529, 185)
 texture = ExtResource("13_eska7")
 
 [node name="HouselessGroup" type="CanvasGroup" parent="."]
+z_index = -1
 
 [node name="Jesse" type="AnimatedSprite2D" parent="HouselessGroup"]
+unique_name_in_owner = true
 position = Vector2(396, 197)
 scale = Vector2(0.0662879, 0.0662879)
 sprite_frames = SubResource("SpriteFrames_fdu5n")
 
+[node name="StaticBody2D" type="StaticBody2D" parent="HouselessGroup/Jesse"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HouselessGroup/Jesse/StaticBody2D"]
+position = Vector2(-22.6289, 7.54248)
+shape = SubResource("RectangleShape2D_uber2")
+
 [node name="Derek" type="AnimatedSprite2D" parent="HouselessGroup"]
-position = Vector2(193, 110)
+unique_name_in_owner = true
+position = Vector2(184, 110)
 scale = Vector2(0.0621143, 0.0621143)
-sprite_frames = SubResource("SpriteFrames_fdu5n")
+sprite_frames = SubResource("SpriteFrames_1mx1x")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="HouselessGroup/Derek"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HouselessGroup/Derek/StaticBody2D"]
+position = Vector2(0.000732422, 0)
+shape = SubResource("RectangleShape2D_7rq3w")
+
+[node name="SignsGroup" type="CanvasGroup" parent="."]
+
+[node name="SignN" type="Sprite2D" parent="SignsGroup"]
+position = Vector2(892, 52)
+scale = Vector2(1.92857, 1.92857)
+texture = ExtResource("19_o5qqi")
+
+[node name="SignE" type="Sprite2D" parent="SignsGroup"]
+position = Vector2(1529, 503)
+scale = Vector2(1.92857, 1.92857)
+texture = ExtResource("19_o5qqi")
+
+[node name="Tools" type="Sprite2D" parent="."]
+position = Vector2(1381, 925)
+texture = ExtResource("20_ej0su")
+
+[node name="HotdogStand" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(482, 569)
+scale = Vector2(2.18966, 2.18966)
+texture = ExtResource("21_nqlfy")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="HotdogStand"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="HotdogStand/StaticBody2D"]
+polygon = PackedVector2Array(19.1811, 13.244, 17.3543, 14.6141, -10.0473, 14.1574, -11.874, 12.3307, -17.811, 11.874, -18.2677, -1.82681, -20.0945, -1.82681, -17.3543, -5.93706, -13.7008, -6.39374, -18.2677, -11.4174, -14.6142, -14.6142, 2.74014, -14.6142, 7.76376, -11.8741, 4.56691, -8.22052, 7.76376, -6.85043, 10.5039, -2.7402, 15.9842, 2.28342, 19.6378, 3.6535, 20.5512, 5.48029, 20.5512, 10.5039)
+
+[node name="CutsceneCamera" type="Path2D" parent="."]
+curve = SubResource("Curve2D_c3hni")
+
+[node name="CameraPathFollow" type="PathFollow2D" parent="CutsceneCamera"]
+position = Vector2(1560, 550)
+rotates = false
+
+[node name="Camera2D" type="Camera2D" parent="CutsceneCamera/CameraPathFollow"]
+enabled = false
+zoom = Vector2(2.5, 2.5)
+
+[node name="CopPath1" type="Path2D" parent="."]
+position = Vector2(96, -76)
+curve = SubResource("Curve2D_pdiq6")
+
+[node name="Cop1PathFollow" type="PathFollow2D" parent="CopPath1"]
+position = Vector2(1560, 550)
+rotates = false
+
+[node name="AnimatedSprite2D" parent="CopPath1/Cop1PathFollow" instance=ExtResource("22_2bmpw")]
+position = Vector2(5, -4)
+
+[node name="CopPath2" type="Path2D" parent="."]
+position = Vector2(80, -40)
+curve = SubResource("Curve2D_crutd")
+
+[node name="Cop2PathFollow" type="PathFollow2D" parent="CopPath2"]
+position = Vector2(1560, 550)
+rotates = false
+
+[node name="AnimatedSprite2D" parent="CopPath2/Cop2PathFollow" instance=ExtResource("22_2bmpw")]
+position = Vector2(6, -3)
+
+[node name="CopPath3" type="Path2D" parent="."]
+position = Vector2(140, -37)
+curve = SubResource("Curve2D_snm2t")
+
+[node name="Cop3PathFollow" type="PathFollow2D" parent="CopPath3"]
+position = Vector2(1560, 550)
+rotates = false
+
+[node name="AnimatedSprite2D" parent="CopPath3/Cop3PathFollow" instance=ExtResource("22_2bmpw")]
+position = Vector2(6, -3)
+
+[node name="CutscenePlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_0mcu1")
+}
+
+[connection signal="animation_finished" from="CutscenePlayer" to="." method="game_end"]
