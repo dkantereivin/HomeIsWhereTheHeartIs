@@ -1,0 +1,14 @@
+- dialog: I'm starving...
+  responses:
+    - dialog: I don't really have any food on me.
+    - dialog: "<< Pretend you don't hear or see anything. >>"
+      action: end_interaction
+
+- dialog: There's a food stand over there, just saying..
+  responses:
+    - dialog: I don't have a lot of cash, but I can see if they have a hot dog or something...
+    - dialog: I'm sorry.
+      action: end_interaction
+
+- dialog: Really? I haven't had anything to eat in two days, and I'm starting to see spots in my vision, I got kicked out a couple days ago and I don't know how to get anything for free... I already tried to steal from the guy selling food over there and now he knows what I look like... It means a lot...”
+  action: "start_quest:food"

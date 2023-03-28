@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://d0xc673a1ulvx"]
+
+[ext_resource type="Texture2D" uid="uid://38lt3mden4mn" path="res://assets/SproutLands/UI/Dialouge UI/dialog box medium.png" id="1_xeitl"]
+[ext_resource type="Script" path="res://sprites/dialog_box/dbox.gd" id="2_106ey"]
+
+[sub_resource type="SystemFont" id="SystemFont_pobph"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_nowjt"]
+line_spacing = 2.0
+font = SubResource("SystemFont_pobph")
+font_size = 5
+font_color = Color(0.0745098, 0.0745098, 0.0745098, 1)
+
+[node name="Box" type="Sprite2D"]
+position = Vector2(113, -4)
+scale = Vector2(1.8125, 1)
+texture = ExtResource("1_xeitl")
+script = ExtResource("2_106ey")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -54.0
+offset_top = -14.0
+offset_right = 58.0
+offset_bottom = 15.0
+text = "-- PLACEHOLDER --"
+label_settings = SubResource("LabelSettings_nowjt")
+autowrap_mode = 2
+clip_text = true
+text_overrun_behavior = 1

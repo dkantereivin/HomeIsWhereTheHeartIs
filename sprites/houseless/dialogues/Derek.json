@@ -1,0 +1,45 @@
+[
+	{
+		"dialog": "Hey! Sorry, you caught me a bit off guard. Wasn't expecting you to talk to me. Do you think I could bum a smoke? I'm Derek by the way.",
+		"responses": [
+			{
+				"dialog": "I don't really have any on me."
+			},
+			{
+				"dialog": "<< Walk Away >>",
+				"action": "end_interaction"
+			}
+		]
+	},
+	{
+		"dialog": "Ah, that's cool, I should probably quit anyways. But a quick little smoke break never hurt anyone, and it's been real stressful lately.",
+		"responses": [
+			{
+				"dialog": "Stressful?"
+			},
+			{
+				"dialog": "I have to go now, but see you around.",
+				"action": "end_interaction"
+			}
+		]
+	},
+	{
+		"dialog": "The police started putting all these signs up around the park, I'm not sure if they're trying to intimidate us or if they're getting serious."
+	},
+	{
+		"dialog": "They've increased their patrols and I feel like they're going to do something any day now. It's stressing me out man.",
+		"responses": [
+			{
+				"dialog": "I'm sure it's nothing.",
+				"action": "end_interaction"
+			},
+			{
+				"dialog": "That sounds really awful. Is there any way I can help?"
+			}
+		]
+	},
+	{
+		"dialog": "The police over there don't really fuck with us, but wanna help us take down the signs? There'll be some tools in the community garden. Where there's no law, there's no wrong, eh?",
+		"action": "start_quest:signs"
+	}
+]
