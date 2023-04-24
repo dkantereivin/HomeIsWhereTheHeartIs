@@ -1,6 +1,6 @@
-[gd_scene load_steps=17 format=3 uid="uid://c188tgoq0ylfd"]
+[gd_scene load_steps=19 format=3 uid="uid://c188tgoq0ylfd"]
 
-[ext_resource type="Script" path="res://levels/culdesac_level.gd" id="1_alkpd"]
+[ext_resource type="Script" path="res://levels/tolu_level.gd" id="1_201s6"]
 [ext_resource type="PackedScene" uid="uid://be2axyohnka6e" path="res://characters/player.tscn" id="2_7kxs0"]
 [ext_resource type="Texture2D" uid="uid://qfxsb6h6bn00" path="res://assets/ModularBuildings.png" id="3_m5cp3"]
 [ext_resource type="Texture2D" uid="uid://dhs550vlcr0iw" path="res://assets/ModernExteriors.png" id="4_w5gu5"]
@@ -30566,8 +30566,14 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uiwnh"]
 size = Vector2(18, 20)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s2yla"]
+size = Vector2(120, 28)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j3hx1"]
+size = Vector2(18, 1069)
+
 [node name="ToluLevel" type="Node2D"]
-script = ExtResource("1_alkpd")
+script = ExtResource("1_201s6")
 
 [node name="Player" parent="." instance=ExtResource("2_7kxs0")]
 position = Vector2(792, 310)
@@ -30612,3 +30618,20 @@ frame_progress = 0.738447
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tolu/StaticBody2D"]
 position = Vector2(0, 5)
 shape = SubResource("RectangleShape2D_uiwnh")
+
+[node name="MarketTriggerBox" type="Area2D" parent="."]
+position = Vector2(1091, 401)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MarketTriggerBox"]
+position = Vector2(50, 5)
+shape = SubResource("RectangleShape2D_s2yla")
+
+[node name="NextLevelTrigger" type="Area2D" parent="."]
+position = Vector2(1894, 505)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NextLevelTrigger"]
+position = Vector2(-1, 37.5)
+shape = SubResource("RectangleShape2D_j3hx1")
+
+[connection signal="body_entered" from="MarketTriggerBox" to="." method="_on_market_trigger_box_body_entered"]
+[connection signal="body_entered" from="NextLevelTrigger" to="." method="_on_next_level_trigger_body_entered"]

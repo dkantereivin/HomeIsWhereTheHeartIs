@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_8"
+type="Resource"
+uid="uid://cykjpmaurnwgw"
+path="res://.godot/imported/ToluAdvance.dialogue-fbe807da3f5e69f33e2703fb07899c54.tres"
+
+[deps]
+
+source_file="res://characters/tolu/ToluAdvance.dialogue"
+dest_files=["res://.godot/imported/ToluAdvance.dialogue-fbe807da3f5e69f33e2703fb07899c54.tres"]
+
+[params]
+

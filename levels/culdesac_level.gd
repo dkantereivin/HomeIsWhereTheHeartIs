@@ -3,6 +3,8 @@ extends Node2D
 @onready var player = get_node("Player")
 @onready var bus = get_node("Bus")
 
+
+
 func _physics_process(_delta):
 	if Input.is_action_just_pressed("interact"):
 		interact()
@@ -14,5 +16,6 @@ func interact():
 		DialogueManager.show_example_dialogue_balloon(dialogue)
 
 func advance_scene(_resource):
-	print("GOING FORWARD")
+	get_tree().change_scene_to_file("res://levels/downtown_level.tscn")
 	DialogueManager.dialogue_ended.disconnect(advance_scene)
+

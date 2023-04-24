@@ -14,6 +14,19 @@ func _physics_process(_delta):
 		
 func interact():
 	if player.get_position().distance_to(tolu.get_position()) < 25:
-		var dialogue = load("res://characters/Tolu/Initial.dialogue")
+		if "Tolu" in PlayerVars.quests:
+			if "ToluFood" in PlayerVars.inventory:
+				var dialogue = load("res://characters/Tolu/Finish.dialogue")
+				DialogueManager.show_example_dialogue_balloon(dialogue)
+		else:
+			var dialogue = load("res://characters/Tolu/Initial.dialogue")
+			DialogueManager.show_example_dialogue_balloon(dialogue)
+
+func _on_market_trigger_box_body_entered(body):
+	if body == player and "Tolu" in PlayerVars.quests:
+		var dialogue = load("res://characters/tolu/ToluFood.dialogue")
 		DialogueManager.show_example_dialogue_balloon(dialogue)
 
+
+func _on_next_level_trigger_body_entered(body):
+	get_tree().change_scene_to_file("res://levels/park_level.tscn")

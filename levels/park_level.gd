@@ -7,8 +7,13 @@ extends Node2D
 func _physics_process(_delta):
 	if Input.is_action_just_pressed("interact"):
 		interact()
-	if PlayerVars.completed.size() == 2 and not $CutscenePlayer.is_playing():
-		$CutscenePlayer.play("RESET")
+	if PlayerVars.completed.size() == 2 and not $CopCutscenePlayer.is_playing() and PlayerVars.karma < 2:
+		$CopCutscenePlayer.play("RESET")
+	if PlayerVars.completed.size() == 2 and PlayerVars.karma >= 2:
+		get_node("ProtestGroup").visible = true
+		var dialogue = load("res://sprites/GoodEnding.dialogue")
+		DialogueManager.show_example_dialogue_balloon(dialogue)
+		DialogueManager.dialogue_ended.connect(game_end)
 
 func interact():
 	for houseless in get_node("HouselessGroup").get_children():

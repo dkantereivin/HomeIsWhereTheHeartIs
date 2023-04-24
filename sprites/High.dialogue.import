@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_8"
+type="Resource"
+uid="uid://dc16hccnobky7"
+path="res://.godot/imported/High.dialogue-7cca39b0a31b1f8a6ef55e532541301d.tres"
+
+[deps]
+
+source_file="res://sprites/High.dialogue"
+dest_files=["res://.godot/imported/High.dialogue-7cca39b0a31b1f8a6ef55e532541301d.tres"]
+
+[params]
+

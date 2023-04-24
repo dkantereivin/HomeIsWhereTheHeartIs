@@ -15,5 +15,4 @@ func sign_exists(name: String):
 	return group.has_node(name)
 
 func trigger_surreal():
-	# animation
-	pass
+	get_tree().change_scene_to_file("res://levels/surreal_level.tscn")

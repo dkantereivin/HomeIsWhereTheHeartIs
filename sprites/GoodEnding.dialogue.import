@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_8"
+type="Resource"
+uid="uid://cywlqkwhdadp0"
+path="res://.godot/imported/GoodEnding.dialogue-36706a190ea3ff77ff6b059674808c2d.tres"
+
+[deps]
+
+source_file="res://sprites/GoodEnding.dialogue"
+dest_files=["res://.godot/imported/GoodEnding.dialogue-36706a190ea3ff77ff6b059674808c2d.tres"]
+
+[params]
+

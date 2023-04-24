@@ -6,6 +6,7 @@ extends Node2D
 @onready var odkid = get_node("NeedleODTrigger/KidOD")
 @onready var needle = get_node("NeedleODTrigger/Needle")
 
+
 func _physics_process(_delta):
 	if Input.is_action_just_pressed("interact"):
 		interact()
@@ -16,7 +17,7 @@ func interact():
 		if "Flier" not in PlayerVars.quests:
 			dialogue_linda = load("res://characters/linda/Initial.dialogue")
 		# mutually exclusive above below
-		if "Hygiene" in PlayerVars.inventory:
+		elif "Hygiene" in PlayerVars.inventory:
 			dialogue_linda = load("res://characters/linda/AfterHygiene.dialogue")
 		elif "HygieneRejected" not in PlayerVars.completed:
 			dialogue_linda = load("res://characters/linda/AfterFlier.dialogue")
@@ -28,7 +29,7 @@ func interact():
 		var dialogue = load("res://sprites/Flier.dialogue")
 		DialogueManager.show_example_dialogue_balloon(dialogue)
 		
-	if player.get_position().distance_to(odkid.get_position()) and odstarted:
+	if player.get_position().distance_to(odkid.get_position()) < 25 and odstarted:
 		var dialogue = load("res://sprites/FirstAid.dialogue")
 		DialogueManager.show_example_dialogue_balloon(dialogue)
 		
@@ -40,6 +41,7 @@ func shoparea_entered():
 	DialogueManager.show_example_dialogue_balloon(dialogue)
 
 func advance_scene(_resource):
+	get_tree().change_scene_to_file("res://levels/surreal_level.tscn")
 	DialogueManager.dialogue_ended.disconnect(advance_scene)
 
 

@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_8"
+type="Resource"
+uid="uid://beippln1fdag5"
+path="res://.godot/imported/ToluFood.dialogue-9ab65339efab7e26d98ccc9143904173.tres"
+
+[deps]
+
+source_file="res://characters/tolu/ToluFood.dialogue"
+dest_files=["res://.godot/imported/ToluFood.dialogue-9ab65339efab7e26d98ccc9143904173.tres"]
+
+[params]
+
