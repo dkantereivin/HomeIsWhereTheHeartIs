@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_8"
+type="Resource"
+uid="uid://cbsc7ux8syflw"
+path="res://.godot/imported/Needle.dialogue-4b59681d8ce75201f91aee59d2f57fac.tres"
+
+[deps]
+
+source_file="res://sprites/Needle.dialogue"
+dest_files=["res://.godot/imported/Needle.dialogue-4b59681d8ce75201f91aee59d2f57fac.tres"]
+
+[params]
+

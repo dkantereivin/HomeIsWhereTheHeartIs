@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_8"
+type="Resource"
+uid="uid://ban61bv62lfms"
+path="res://.godot/imported/FirstAid.dialogue-57b5f90f696ddecfbd61d24bd0f410c1.tres"
+
+[deps]
+
+source_file="res://sprites/FirstAid.dialogue"
+dest_files=["res://.godot/imported/FirstAid.dialogue-57b5f90f696ddecfbd61d24bd0f410c1.tres"]
+
+[params]
+

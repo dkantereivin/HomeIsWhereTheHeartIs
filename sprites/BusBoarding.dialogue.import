@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_8"
+type="Resource"
+uid="uid://ck4g3oorpgffo"
+path="res://.godot/imported/BusBoarding.dialogue-f46566bfd1e06a58bb5c916a16e77fb4.tres"
+
+[deps]
+
+source_file="res://sprites/BusBoarding.dialogue"
+dest_files=["res://.godot/imported/BusBoarding.dialogue-f46566bfd1e06a58bb5c916a16e77fb4.tres"]
+
+[params]
+

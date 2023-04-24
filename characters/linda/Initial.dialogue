@@ -1,0 +1,16 @@
+~ LindaInitial
+
+Linda: Do you need something?
+- Sorry, I was just looking at the shelter.
+- No thanks.
+	do karma -= 1
+- Not from you.
+	do karma -= 2
+Linda: Oh, this place? Yeah, it's alright, I mean you take whatever shelter you can get.
+Linda: It's better than being on the streets.
+- How come everyone doesn't just come here?
+- Yeah I bet.
+Linda: I don’t know man, it's not my job to educate you.. Go read a flyer or some shit. Could you back up please?
+- << Walk Away >>
+- Dang, she so r00d. << Walk Away >>
+do quests += ["Flier"]

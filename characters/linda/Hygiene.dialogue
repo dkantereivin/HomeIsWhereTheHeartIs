@@ -1,0 +1,33 @@
+~ Hygiene
+
+You have arrived at a store which carries personal hygiene products.
+Vendor: Hi There! Can I get you anything?
+- No thanks, I'm just passing by. => END!
+- Yes, I'm here for some personal hygiene items.
+Vendor: Sure thing.
+- Could I get some disposable toothbrushes, wet wipes, and some tampons?
+	Vendor: *laughs* tampons...
+	- They're for my partner.
+		Vendor: Cool.
+	- I'm getting them for someone at the shelter.
+		Vendor: *scoffs*
+		Vendor: Here you go.
+		do karma += 2
+	- Don't assume whether someone menstruates based on how they look.
+		Vendor: Sheesh dude, whatever. Here you go.
+		do karma += 2
+	- << Don't Engage >>
+	- << Leave >> => END
+- Could I get some disposable toothbrushes, wet wipes, and some tampons? They're for my partner.
+Vendor: That's all. That'll be $18.
+- << Pay >>
+		do inventory += ["Hygiene"]
+		Hygiene Kit has been added to your inventory. Return to Linda.
+- Do you carry socks?
+	Vendor: Sorry, no.
+	- << Pay >>
+		do inventory += ["Hygiene"]
+		do karma += 1
+		Hygiene Kit has been added to your inventory. Return to Linda.
+	- << Leave >> => END
+- << Leave >> => END

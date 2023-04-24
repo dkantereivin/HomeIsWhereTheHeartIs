@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_8"
+type="Resource"
+uid="uid://bqcuksfiqyu5v"
+path="res://.godot/imported/AfterFlier.dialogue-78a2a03f535c47bbc27637bfccb3752e.tres"
+
+[deps]
+
+source_file="res://characters/linda/AfterFlier.dialogue"
+dest_files=["res://.godot/imported/AfterFlier.dialogue-78a2a03f535c47bbc27637bfccb3752e.tres"]
+
+[params]
+

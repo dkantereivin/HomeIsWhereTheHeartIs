@@ -1,0 +1,39 @@
+~ FirstAid
+
+Holy Shit. That kid must have touched the drugs, it seems like he might be overdosing.
+- Call 911
+911 Operator: 911, Police, Fire, or Ambulance?
+- Ambulance
+Dispatcher: Toronto Paramedic Dispatch, what's your emergency?
+- I'm behind the Shelter at Dundas and Ossington and there's a child who touched a needle and appears to be overdosing.
+Dispatcher: Okay, I'm sending an ambulance. Can you check if they are breathing?
+- << Look, Listen, and Feel for Breathing >>
+I don't think he's breathing...
+Dispatcher: Do they have a pulse?
+- There is no pulse.
+Dispatcher: How old does the child appear?
+- 10 years old.
+Dispatcher: Okay, I need you to perform CPR. Do you know how to do CPR?
+- Yes
+	Okay, start now. See if someone around has a naloxone kit.
+- No
+	Dispatcher: Okay, cross over your hands and place them on his breast bone. Push hard and deep, to the beat of "Staying Alive."
+	Dispatcher: Every 30 compressions, shut their nose and give 2 rescue breaths into the mouth. If you don't feel comfortable, you can give compression-only CPR.
+	Dispatcher: See if someone around has a naloxone kit.
+
+Dispatcher: The ambulance will be there in 10 minutes. Stay on the line.
+
+Hmmm... If I give rescue breaths, they will be more effective. But, I am putting myself at personal risk.
+- Give Full CPR with Rescue Breaths.
+	You begin CPR and know to continue until the ambulance arrives.
+	Suddenly, you start to feel a little hazy...
+- Give Compression-Only CPR.
+	do karma += 3
+	You begin chest compressions and know to continue until the ambulance arrives.
+	do trigger_surreal()
+	Suddenly, you start to feel a little hazy...
+- Sit next to him and wait for the ambulance to arrive.
+	do trigger_surreal()
+	do karma -= 3
+	As you sit, you feel a sharp prick in your thigh.
+	

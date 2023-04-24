@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_8"
+type="Resource"
+uid="uid://csppohkqanafa"
+path="res://.godot/imported/AfterHygiene.dialogue-2ec851009ffeb9d9fc81888a5468aaa6.tres"
+
+[deps]
+
+source_file="res://characters/linda/AfterHygiene.dialogue"
+dest_files=["res://.godot/imported/AfterHygiene.dialogue-2ec851009ffeb9d9fc81888a5468aaa6.tres"]
+
+[params]
+

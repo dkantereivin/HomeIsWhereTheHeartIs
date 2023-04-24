@@ -1,0 +1,19 @@
+~ Flier
+
+Flier: "Homeless Shelters are not Enough"
+- Read it Later
+	do karma -= 1
+	do completed += ["Flier"]
+- Read the Flier
+	Homeless encampment evictions often result from property owners lodging several complaints to prompt municipal action.
+	Although some individuals flock to shelters, beds are often in limited supply. Shelters receive limited funding because they are not profitable.
+	Many shelters are only available for only one night and often have curfews.
+	"They do not properly accommodate women with children, people with pets or people with night shifts."
+	Unsurprisingly, reports of sexual abuse in shelters are prevalent often owing to the imbalance power dynamic between shelter staff and unhoused people.
+	The staff are often overworked and underpaid. 
+	do inventory += ["Knowledge"]
+	do completed += ["Flier"]
+	<< Knowledge Added to Your Inventory. Go back and talk to Linda. >>
+- Take down the Flier
+	do karma -= 3
+	do completed += ["Flier"]

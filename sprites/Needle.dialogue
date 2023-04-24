@@ -1,0 +1,20 @@
+~ Needle
+
+I see what looks like drug paraphernalia and some exposed needles on the ground.
+"There's lots of kids nearby... I wonder if I should go clean it up..."
+- << Go and clean it up. >>
+	do karma += 1
+	As you begin to cleanup the needles, you are careful not to touch the sharp ends.
+	After touching the needle, you notice that there was slight residue of an unknown substance on the side...
+	...
+	do trigger_surreal()
+	You start to feel hazy... => END
+- << Ignore It >>
+	do karma -= 1
+...
+...
+...
+KID DONT TOUCH THAT!
+...
+* The child collapses next to the needles. *
+- << Walk Towards Him and Interact >>

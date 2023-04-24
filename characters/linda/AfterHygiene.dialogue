@@ -1,0 +1,20 @@
+~ AfterHygiene
+
+Linda: Oh you actually got it! I really appreciate it, you had more than pity to offer.
+- Yeah, no worries.
+Linda: I didn’t really want to share my story with a stranger but it’s not like I’m gonna see you ever again.
+Linda: I don't know... I trusted my boyfriend and we had all of our money in a joint account.
+Linda: We were pretty solid so we moved here from Thunder Bay so we could find more job opportunities in the city.
+Linda: He’d always had his bad days where he’d threaten to hit me or just leave up and leave, but it would all blow over and we would be back to normal the next day.
+Linda: He has bipolar disorder, and I couldn’t really stay mad at him for long, after all I’ve been diagnosed with it too.
+Linda: I really thought we were meant for each other.
+Linda: I don’t know what happened but one day he came back from work furious, thinking that I had cheated on him and he kicked me out of our shared apartment.
+Linda: I was in between jobs at the time doing Uber with our car while he was working. It wasn’t the most stable situation but it worked.
+Linda: I was too embarrassed to tell my friends because they’d told me to leave him a couple times before but... I don’t know, it's all so confusing.
+Linda: Anyways, I don’t really have any friends or family here and I’ve been staying at the shelter in this area.
+Linda: But it has its fair share of problems. 
+Linda: Thanks for the hygiene kit. 
+do karma += 1
+do completed += ["Hygiene"]
+- Good Luck with Everything.
+<< Shoot, time is flying by. I should get going. I can walk to Trinity Bellwoods by heading upwards on this street. >>

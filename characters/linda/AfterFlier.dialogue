@@ -1,0 +1,28 @@
+~ LindaAfterFlier
+
+Linda: Oh you’re still here? Jesus, what are you homeless too?
+- No, I just wanted to know how I could help.
+- Haha, I’m not, I just haven’t seen this building before...
+Linda: Oh you think you’re a white knight huh? There’s a lot of people like you around these parts.
+Linda: Pity prompts people like you to give me spare change but we’re not so different from each other...
+- I never really thought about that, but I guess pity’s part of it...
+- I mean I’m just trying to help, I’m going to go... => END!
+Linda: It’s parents of privileged people like you that protest homeless encampments and gatherings.
+Linda: This city has enough money to solve the entire problem of homelessness but instead they use taxpayer money to put bars on benches and spikes outside of buildings.
+Linda: I’m not even surprised anymore, you can’t trust anyone.
+- ...
+- Yeah, I guess you can't.
+Linda: You think you can trust someone and then it just backfires in your face.
+- That sounds like it really hurts.
+- I guess, but doesn’t it depend on the person? 
+Linda: I can’t even believe you’ve been listening to me talk for this long. I’ve been in a bad mood, but that’s an understatement.
+Linda: I’ve got a lot on my mind and speaking about it outloud makes me less furious. 
+- I was heading downtown, but I’ve got a couple of seconds to listen to your story. 
+- Yeah you didn’t really want to talk to me at the start. I'm just trying to help.
+Linda: It’s pretty personal, I don’t know. I’d feel a lot better if you could get me a hygiene kit or something like that...
+Linda: You know with wet wipes, tampons, toothbrushes and maybe socks.
+- "Alright, I'll see what I can do."
+	do quests += ["Hygiene"]
+- "I'm not sure if I can get all of that right now, but I can spare some change."
+	do completed += ["HygieneRejected"]
+	do karma -= 1

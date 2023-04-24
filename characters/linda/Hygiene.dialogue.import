@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_8"
+type="Resource"
+uid="uid://dabay6x31ewhq"
+path="res://.godot/imported/Hygiene.dialogue-1cdc7b1eba3cc0d3fa7b57e76bcc2198.tres"
+
+[deps]
+
+source_file="res://characters/linda/Hygiene.dialogue"
+dest_files=["res://.godot/imported/Hygiene.dialogue-1cdc7b1eba3cc0d3fa7b57e76bcc2198.tres"]
+
+[params]
+

@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_8"
+type="Resource"
+uid="uid://655qiy7xq8dh"
+path="res://.godot/imported/Initial.dialogue-8ddf8a614738ef80f949241a4bdec889.tres"
+
+[deps]
+
+source_file="res://characters/linda/Initial.dialogue"
+dest_files=["res://.godot/imported/Initial.dialogue-8ddf8a614738ef80f949241a4bdec889.tres"]
+
+[params]
+

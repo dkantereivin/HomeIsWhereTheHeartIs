@@ -65,7 +65,11 @@ interact={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://sprites/houseless/dialogues/Jesse.dialogue", "res://sprites/houseless/dialogues/Derek.dialogue", "res://sprites/Tool.dialogue", "res://sprites/Sign.dialogue", "res://sprites/SignE.dialogue", "res://sprites/SignN.dialogue", "res://sprites/HotdogStand.dialogue", "res://sprites/JesseQuest.dialogue", "res://sprites/houseless/dialogues/JesseQuest.dialogue", "res://sprites/houseless/dialogues/DerekQuest.dialogue")
+locale/translations_pot_files=PackedStringArray("res://sprites/houseless/dialogues/Jesse.dialogue", "res://sprites/houseless/dialogues/Derek.dialogue", "res://sprites/Tool.dialogue", "res://sprites/Sign.dialogue", "res://sprites/SignE.dialogue", "res://sprites/SignN.dialogue", "res://sprites/HotdogStand.dialogue", "res://sprites/JesseQuest.dialogue", "res://sprites/houseless/dialogues/JesseQuest.dialogue", "res://sprites/houseless/dialogues/DerekQuest.dialogue", "res://sprites/Bus.dialogue", "res://sprites/BusBoarding.dialogue", "res://characters/linda/Initial.dialogue", "res://sprites/Flyer.dialogue", "res://sprites/Flier.dialogue", "res://characters/linda/AfterFlier.dialogue", "res://characters/linda/Hygiene.dialogue", "res://characters/linda/AfterHygiene.dialogue", "res://characters/linda/SnobbyWoman.dialogue", "res://characters/linda/Teenager.dialogue", "res://characters/misc/SnobbyWoman.dialogue", "res://characters/misc/Teenager.dialogue", "res://sprites/Needle.dialogue", "res://sprites/FirstAid.dialogue")
+
+[memory]
+
+limits/message_queue/max_size_kb=8192
 
 [rendering]
 

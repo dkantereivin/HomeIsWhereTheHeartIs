@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_8"
+type="Resource"
+uid="uid://ddkfv1fimga6w"
+path="res://.godot/imported/SnobbyWoman.dialogue-c6babfd0e33ac3da7319ca2c865d1043.tres"
+
+[deps]
+
+source_file="res://characters/misc/SnobbyWoman.dialogue"
+dest_files=["res://.godot/imported/SnobbyWoman.dialogue-c6babfd0e33ac3da7319ca2c865d1043.tres"]
+
+[params]
+

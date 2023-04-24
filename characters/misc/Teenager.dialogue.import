@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_8"
+type="Resource"
+uid="uid://bfk4ucso25dfe"
+path="res://.godot/imported/Teenager.dialogue-62b1cd8688af2adb7e19157ac3d166d7.tres"
+
+[deps]
+
+source_file="res://characters/misc/Teenager.dialogue"
+dest_files=["res://.godot/imported/Teenager.dialogue-62b1cd8688af2adb7e19157ac3d166d7.tres"]
+
+[params]
+

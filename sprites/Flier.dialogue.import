@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_8"
+type="Resource"
+uid="uid://bebgue5cdpmvh"
+path="res://.godot/imported/Flier.dialogue-9ab2a002d618c55199c3feca41ff6df2.tres"
+
+[deps]
+
+source_file="res://sprites/Flier.dialogue"
+dest_files=["res://.godot/imported/Flier.dialogue-9ab2a002d618c55199c3feca41ff6df2.tres"]
+
+[params]
+
