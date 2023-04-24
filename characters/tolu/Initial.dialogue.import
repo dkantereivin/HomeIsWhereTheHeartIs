@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_8"
+type="Resource"
+uid="uid://ca83gajfa8138"
+path="res://.godot/imported/Initial.dialogue-4f5af59a8eb0135b7d557643fbb30bf0.tres"
+
+[deps]
+
+source_file="res://characters/tolu/Initial.dialogue"
+dest_files=["res://.godot/imported/Initial.dialogue-4f5af59a8eb0135b7d557643fbb30bf0.tres"]
+
+[params]
+

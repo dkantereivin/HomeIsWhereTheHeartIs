@@ -1,0 +1,16 @@
+~ ToluInitial
+
+Tolu: Engage Dialogue
+- "No, but I can get you some if you'd like."
+- No, but I can go get some apples from the market for you.
+	"Tolu: I don't really want apples, my teeth can't handle them." => END
+- No. => END
+Tolu: Yeah? While you’re at it, do you have any spare change? I need to print something. 
+- Yeah for sure, what are you printing? 
+Tolu: Thanks. I’m gonna print a copy of my resume at the library for this job interview I have coming up. 
+- A job interview? 
+Tolu: Man, I'm really hungry…. Easy to chew stuff would help right now. 
+- I forgot! I’ll be right back. 
+	do quests += ["Tolu"]
+- I’ve got to run but I hope your job search goes well! => END
+Tolu: Thanks, I'll be here.
