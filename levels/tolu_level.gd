@@ -13,7 +13,7 @@ func _physics_process(_delta):
 		interact()
 		
 func interact():
-	if player.get_position().distance_to(tolu.get_position()) < 25:
+	if player.get_position().distance_to(tolu.get_position()) < 75:
 		if "Tolu" in PlayerVars.quests:
 			if "ToluFood" in PlayerVars.inventory:
 				var dialogue = load("res://characters/Tolu/Finish.dialogue")

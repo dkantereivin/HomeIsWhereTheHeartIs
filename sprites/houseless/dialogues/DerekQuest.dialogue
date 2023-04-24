@@ -29,4 +29,4 @@ Derek: But as I get older, and I find myself sleeping in this park I realize tha
 	DereK: Sometimes things are just out of our control.
 - Yeah sometimes things are out of our control.
 	Derek: Yeah, they are...
-do completed += "Derek"
+do completed += ["Derek"]

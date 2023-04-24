@@ -27,6 +27,8 @@ Hmmm... If I give rescue breaths, they will be more effective. But, I am putting
 - Give Full CPR with Rescue Breaths.
 	You begin CPR and know to continue until the ambulance arrives.
 	Suddenly, you start to feel a little hazy...
+	do karma += 3
+	do trigger_surreal()
 - Give Compression-Only CPR.
 	do karma += 3
 	You begin chest compressions and know to continue until the ambulance arrives.

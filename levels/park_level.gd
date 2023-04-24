@@ -7,9 +7,20 @@ extends Node2D
 func _physics_process(_delta):
 	if Input.is_action_just_pressed("interact"):
 		interact()
-	if PlayerVars.completed.size() == 2 and not $CopCutscenePlayer.is_playing() and PlayerVars.karma < 2:
+		
+	if Input.is_action_just_pressed("force_ending"):
+		if PlayerVars.karma < 2:
+			$CopCutscenePlayer.play("RESET")
+		else:
+			var dialogue = load("res://sprites/GoodEnding.dialogue")
+			DialogueManager.show_example_dialogue_balloon(dialogue)
+			DialogueManager.dialogue_ended.connect(game_end)
+	
+	var completed = "Jesse" in PlayerVars.completed and "Derek" in PlayerVars.completed
+	if not completed: return
+	if not $CopCutscenePlayer.is_playing() and PlayerVars.karma < 2:
 		$CopCutscenePlayer.play("RESET")
-	if PlayerVars.completed.size() == 2 and PlayerVars.karma >= 2:
+	if PlayerVars.karma >= 2:
 		get_node("ProtestGroup").visible = true
 		var dialogue = load("res://sprites/GoodEnding.dialogue")
 		DialogueManager.show_example_dialogue_balloon(dialogue)
